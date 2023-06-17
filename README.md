@@ -1,1 +1,1 @@
-### nanobox-hooks-redis ![Build Status Image](https://travis-ci.org/nanobox-io/nanobox-hooks-redis.svg)
+### microbox-hooks-redis ![Build Status Image](https://github.com/mu-box/microbox-hooks-redis/actions/workflows/ci.yaml/badge.svg)

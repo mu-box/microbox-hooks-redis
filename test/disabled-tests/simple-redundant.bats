@@ -137,7 +137,7 @@ echo_lines() {
 }
 
 @test "Insert Secondary ${service_name} Data" {
-  if [ "$multi_master" = "false" ]; then
+  if [ "$multi_main" = "false" ]; then
     skip
   fi
   insert_test_data "simple-redundant-secondary" "192.168.0.3" ${default_port} "mykey2" "date"
@@ -146,7 +146,7 @@ echo_lines() {
 
 @test "Verify Primary ${service_name} Data" {
   verify_test_data "simple-redundant-primary" "192.168.0.2" ${default_port} "mykey" "data"
-  if [ ! "$multi_master" = "false" ]; then
+  if [ ! "$multi_main" = "false" ]; then
     verify_test_data "simple-redundant-primary" "192.168.0.2" ${default_port} "mykey2" "date"
   fi
 }

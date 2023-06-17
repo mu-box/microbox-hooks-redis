@@ -2,7 +2,7 @@ port 26379
 daemonize no
 bind 0.0.0.0
 
-sentinel monitor gonano <%= master %> 6380 2
-sentinel down-after-milliseconds gonano 3100
-sentinel failover-timeout gonano 180000
-sentinel parallel-syncs gonano 1
+sentinel monitor gomicro <%= main %> 6380 2
+sentinel down-after-milliseconds gomicro 3100
+sentinel failover-timeout gomicro 180000
+sentinel parallel-syncs gomicro 1
